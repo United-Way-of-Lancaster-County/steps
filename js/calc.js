@@ -1,4 +1,3 @@
-var $ = jQuery;
 var total = 0;
 
 $(document).ready(function () {
@@ -26,6 +25,3 @@ $(document).ready(function () {
   });
 
 });
-
-
-
