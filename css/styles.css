@@ -1,7 +1,6 @@
 body{
 	margin: 10px;
 }
-
 .calculator {
 	text-align: center;
 	margin: 10px auto;
@@ -11,40 +10,36 @@ body{
 	border: 3px solid #ddd;
 	border-radius: 6px;
 }
-
 @media (min-width: 768px) {
 	.calculator {
   	width: 350px;
   }
 }
-
 h2 {
 	font-size: 150%;
 	border-bottom: 1px solid #ddd;
 	margin-bottom: 16px;
 	padding-bottom: 16px;
 }
-
 #calc_total {
 	margin-bottom: 8px;
 	text-align: center;
 }
-
 #calc_activity {
 	margin-top: 22px;
 }
-
 .step-total {
 	font-weight: bold;
 	font-size: 300%;
 }
-
 input[type=number]::-webkit-outer-spin-button,
 input[type=number]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-
 input[type=number] {
   -moz-appearance:textfield;
+}
+.hidden-content {
+	display: none;
 }

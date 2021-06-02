@@ -10,8 +10,9 @@ $(document).ready(function () {
 		  total = $("#calc_total").val() * $("#calc_activity").val();
 	  }
 
+    $(".hidden-content").show();
     $(".step-total").empty();
-    $( ".step-total" ).append( total.toLocaleString() );
+    $(".step-total").append( total.toLocaleString() );
     total = 0;
   });
 
