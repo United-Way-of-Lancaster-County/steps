@@ -43,3 +43,8 @@ input[type=number] {
 .hidden-content {
 	display: none;
 }
+.cheeky {
+	margin-top: 15px;
+	color: #777;
+	font-style: italic;
+}
