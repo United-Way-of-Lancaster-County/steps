@@ -1,5 +1,7 @@
 body{
 	margin: 10px;
+	color: #000000;
+	font-family: "Roboto", sans-serif;
 }
 .calculator {
 	text-align: center;
@@ -70,5 +72,44 @@ input[type=number] {
 }
 
 .logo {
-	width: 100%;
+	height: 90%;
+	width: auto;
+	margin: 0 auto 0 auto;
+	padding: 0;
+}
+
+.title-bar {
+	height: 20vh;
+	display: flex;
+	flex-direction: row;
+	padding-bottom: 30px;
+}
+.flex-spacer {
+	margin: 0 auto 0 auto;
+}
+
+h1 {
+	color: #005191;
+	font-family: "League Gothic", sans-serif;
+}
+
+.title-bar h1 {
+	margin: 30px auto 0 auto;
+	padding-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+	.flex-spacer {
+		display: none;
+	}
+	.title-bar {
+		flex-direction: column;
+	}
+	.logo {
+		height: 100px;
+	}
+	.calculator {
+		margin-top: 20vh;
+		padding-top: 20px;
+	}
 }

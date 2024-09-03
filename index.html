@@ -1,33 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="icon" type="image/svg" href="favicon.png">
-		<title>Step Conversion Calculator</title>
-		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
-		<script src="js/calc.js"></script>
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<link rel="stylesheet" href="css/styles.css">
-	</head>
-	<body>
-    <div><img src="UW_CircleOfHope_FullColor_RGB.png" /></div>
-		<div class="calculator">
-			<h2>Activity to Step Calculator</h2>
-		  <form action="index.html" method="post" accept-charset="utf-8">
-		    <input id="calc_total" type="number" inputmode="numeric" name="calc_total" value="" class="form-control form-control-lg"/>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <title>Step Conversion Calculator</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+    <script src="js/calc.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="title-bar">
+      <div class="flex-spacer">&nbsp;</div>
+      <img src="images/UW_CircleOfHope_FullColor_RGB.png" class="logo" alt="The United Way Circle of Hope logo with the human figure replaced by two shoeprints" />
+      <h1>United Way of Lancaster County Step Challenge</h1>
+    </div>
+    <div class="calculator">
+      <h2>Activity to Step Calculator</h2>
+      <form action="index.html" method="post" accept-charset="utf-8">
+        <input id="calc_total" type="number" inputmode="numeric" name="calc_total" value="" class="form-control form-control-lg"/>
 
-		    <div class="form-check form-check-inline">
-			    <input type="radio" id="minutes" name="interval" value="minutes" class="form-check-input" checked>
-			    <label for="minutes" class="form-check-label">Minutes</label>
-		    </div>
+        <div class="form-check form-check-inline">
+          <input type="radio" id="minutes" name="interval" value="minutes" class="form-check-input" checked>
+          <label for="minutes" class="form-check-label">Minutes</label>
+        </div>
 
-		    <div class="form-check form-check-inline">
-  		    <input type="radio" id="hours" name="interval" value="hours" class="form-check-input">
-  		    <label for="hours" class="form-check-label">Hours</label>
-		    </div>
+        <div class="form-check form-check-inline">
+          <input type="radio" id="hours" name="interval" value="hours" class="form-check-input">
+          <label for="hours" class="form-check-label">Hours</label>
+        </div>
 
-		    <select name="calc_activity" id="calc_activity" class="form-control form-control-lg">
+        <select name="calc_activity" id="calc_activity" class="form-control form-control-lg">
           <option value="130">Bicycling, easy pace </option>
           <option value="170">Bicycling, moderate pace </option>
           <option value="200">Bicycling, vigorous pace </option>
@@ -67,13 +74,13 @@
           <option value="145">Wrestling </option>
           <option value="45">Yoga </option>
         </select>
-		    <br />
+        <br />
         <button type="button" id="calc_button" class="calc-button btn btn-primary btn-block btn-lg">Calculate!</button>
-		  </form>
-		  <br />
-		  <div class="hidden-content">is the equivalent of:</div>
-		  <div class="step-total"></div>
-		  <div class="hidden-content">steps.</div>
-		</div>
-	</body>
+      </form>
+      <br />
+      <div class="hidden-content">is the equivalent of:</div>
+      <div class="step-total"></div>
+      <div class="hidden-content">steps.</div>
+    </div>
+  </body>
 </html>
