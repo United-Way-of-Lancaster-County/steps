@@ -48,3 +48,27 @@ input[type=number] {
 	color: #777;
 	font-style: italic;
 }
+
+.calc-button {
+	background-color: #539ED0;
+	border-color: #07477A;
+}
+
+.btn-primary:hover {
+	color: #ffffff;
+	background-color: #005191;
+	border-color: #07477A;
+	box-shadow: 1px 1px 1px #545454;
+	transform: translateY(-1px)
+}
+
+.btn-primary:active {
+	background-color: #07477A!important;
+	transform: none!important;
+	border-color: #07477A!important;
+	box-shadow: none!important;
+}
+
+.logo {
+	width: 100%;
+}
