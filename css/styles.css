@@ -1,8 +1,27 @@
 body{
 	margin: 10px;
 	color: #000000;
-	font-family: "Roboto", sans-serif;
+	font-family: "Roboto Flex", sans-serif;
 }
+
+a {
+	color: #005191;
+}
+
+a:hover {
+	color: #07477A;
+}
+
+a:active {
+	color: #07477A30;
+}
+
+a:visited {
+	color: #539ED0;
+}
+
+
+
 .calculator {
 	text-align: center;
 	margin: 10px auto;
@@ -111,5 +130,28 @@ h1 {
 	.calculator {
 		margin-top: 20vh;
 		padding-top: 20px;
+	}
+}
+
+.footer {
+	position: fixed;
+	left: 0;
+	top: 96vh;
+	height: 4vh;
+	color: #CCCCCC;
+	font-size: 0.7em;
+	font-family: "Roboto Condensed", sans-serif;
+	width: 100%;
+	text-align: left;
+	padding: 2px 0 2px 30px;
+	background-color: #ffffff;
+	overflow: hidden;
+	z-index: 300;
+}
+
+@media (max-height: 600px) {
+	.footer {
+		top: calc(100vh - 35px);
+		height: 35px;
 	}
 }
